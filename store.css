@@ -48,14 +48,19 @@ header {
 
 .middle {
     background-color: white;
+    width: 50%;
+
+}
+
+.sub-head {
     display: flex;
     align-items: center;
-    width: 50%;
-    max-height: 140px;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .logo {
+    margin-left: 10px;
     height: 140px;
 }
 
@@ -77,3 +82,24 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-size: 16px;
+}
+
+.dept {
+    max-width: 20%;
+    margin: 10px;
+}
+
+.list {
+    border-bottom: 1px solid rgb(59, 130, 246);
+    font-size: 14px;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.list:hover {
+    color: rgb(59, 130, 246);
+    transition: 0.5s;
+    cursor: pointer;
+}

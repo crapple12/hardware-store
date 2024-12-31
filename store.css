@@ -144,6 +144,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    margin-right: 5px;
 }
 
 .items {
@@ -174,4 +175,24 @@ button {
     border: 0px;
     padding: 10px;
     
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid rgb(62, 72, 80);
+    border-top: 3px solid rgb(59, 130, 246);
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.review-box {
+    min-width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid rgb(62, 72, 80);
 }

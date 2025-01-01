@@ -181,6 +181,7 @@ button {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    padding-bottom: 5px;
     border: 1px solid rgb(62, 72, 80);
     border-top: 3px solid rgb(59, 130, 246);
 }
@@ -195,4 +196,43 @@ button {
     margin: 5px;
     padding: 5px;
     border: 1px solid rgb(62, 72, 80);
+    border-radius: 5px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid rgb(62, 72, 80);
+    border-top: 3px solid rgb(59, 130, 246);
+}
+
+.preview-box {
+    min-width: 200px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.slide {
+    max-width: 200px;
+    margin: 5px;
+}
+
+.slide-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.btn-prev, .btn-next {
+    border: none;
+    background: none;
+    color: black;
+}
+
+.btn-prev:hover, .btn-next:hover,
+.btn-prev:focus, .btn-next:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2)
 }

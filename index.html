@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="store.css">
     <title>Hardware Store</title>
+    <script src="store.js"></script>
 </head>
 <body>
     <div class="display">
@@ -124,9 +125,8 @@
                 </div>
                 <div class="preview">
                     <h1 style="padding-left:5px;">Some Of Our Numerous Products</h1>
-                    <div class="p-boxes">
-                        <button class="btn-prev">&#8656;</button> 
-                        <button class="btn-next">&#8658;</button> 
+                    <div class="slider">
+                        <button  onclick="slideLeft()" id="btn-prev" class="slide-buttons">&#8656;</button>  
                         <div class="preview-box">
                             <div class="slide"><span><img  class="slide-img" src="https://i.pinimg.com/736x/a1/33/f2/a133f2adc6b7485b440c3e31a090dfef.jpg"><div>Fire cat</div><div>cat</div></span></div>
                             <div class="slide"><span><img  class="slide-img" src="https://i.pinimg.com/736x/a1/33/f2/a133f2adc6b7485b440c3e31a090dfef.jpg"><div>Fire cat</div><div>cat</div></span></div>
@@ -135,7 +135,7 @@
                             <div class="slide"><span><img  class="slide-img" src="https://i.pinimg.com/736x/a1/33/f2/a133f2adc6b7485b440c3e31a090dfef.jpg"><div>Fire cat</div><div>cat</div></span></div>
                             <div class="slide"><span><img  class="slide-img" src="https://i.pinimg.com/736x/a1/33/f2/a133f2adc6b7485b440c3e31a090dfef.jpg"><div>Fire cat</div><div>cat</div></span></div>
                         </div>
-                        <span onclick="slideLeft()" class="btn"></span>
+                        <button onclick="initSlider()" id="btn-next" class="slide-buttons">&#8658;</button> 
                     </div>
                 </div>
         </div>

@@ -77,7 +77,16 @@ header {
 }
 
 .nav {
+    display: flex;
     font-size: 18px;
+    gap: 10px;
+}
+
+.nav2 {
+    justify-content: center;
+    font-size: 18px;
+    display: none;
+    gap: 10px;
 }
 
 .rihgt {
@@ -85,6 +94,10 @@ header {
     gap: 25px;
     margin-right: 10px;
     align-items: center;
+}
+
+.brands, .index {
+    display: flex;
 }
 
 h1 {
@@ -164,6 +177,11 @@ ul {
     min-height: 300px;
     object-fit: cover;
     margin: 10px;
+}
+
+.image-holder {
+    display: flex; 
+    justify-content: center;
 }
 
 .button {
@@ -259,34 +277,116 @@ button {
     background-color: rgba(0, 0, 0, 0.2)
 }
 
+footer {
+    display: flex;
+    background-color: rgb(62, 72, 80);
+    color: white;
+    width: 100%;
+    min-height: 415px;
+}
+
+.one, .five {
+    width: 20%;
+    background-color: rgb(62, 72, 80);
+}
+
 @media(max-width: 1800px) {
-    .derecha {
+    .derecha, .izquierda, .left, .right, .one, .five {
         width: 24%;
     }
 
-    .izquierda {
-        width: 24%;
+    .middle, header {
+        width: 52%;
+    }
+ }
+
+ @media(max-width: 1700px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 22%;
     }
 
-    .middle {
-        width: 58%;
+    .middle, header {
+        width: 56%;
     }
+ }
 
-    header {
-        width: 59%;
-    }
-
-    .left {
+ @media(max-width: 1600px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
         width: 20%;
     }
 
-    .right {
-        width: 21%;
+    .middle, header {
+        width: 60%;
+    }
+ }
+
+ @media(max-width: 1500px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 18%;
+    }
+
+    .middle, header {
+        width: 64%;
+    }
+ }
+
+ @media(max-width: 1400px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 16%;
+    }
+
+    .middle, header {
+        width: 68%;
+    }
+ }
+
+ @media(max-width: 1300px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 14%;
+    }
+
+    .middle, header {
+        width: 72%;
+    }
+ }
+
+ @media(max-width: 1200px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 12%;
+    }
+
+    .middle, header {
+        width: 76%;
+    }
+ }
+
+ @media(max-width: 1100px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        width: 10%;
+    }
+
+    .middle, header {
+        width: 80%;
+    }
+ }
+
+
+ @media(max-width: 1000px) {
+    .derecha, .izquierda, .left, .right, .one, .five {
+        display: none;
+    }
+
+    .middle, header, footer {
+        width: 100%;
+    }
+
+    header {
+        padding-right: 20px;
     }
 
  }
 
- @media(max-width: 1550px) {
+ @media(max-width: 895px) {
     .content {
         display: flex;
         flex-direction: column-reverse;
@@ -302,7 +402,7 @@ button {
 
  }
 
- @media(max-width: 1200px) {
+ @media(max-width: 730px) {    
     .lower {
         flex-direction: column;
         align-items: center;
@@ -316,10 +416,26 @@ button {
         text-align: left;
     }
 
+    .image-holder {
+        width: 80%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
     .text {
         display: flex;
         flex-direction: column;
         align-items: left;
         width: 98%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav2 {
+        display: flex;
     }
 }

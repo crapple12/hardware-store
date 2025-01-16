@@ -205,6 +205,7 @@ button {
     padding-bottom: 5px;
     border: 1px solid rgb(62, 72, 80);
     border-top: 3px solid rgb(59, 130, 246);
+    overflow: hidden;
 }
 
 .boxes {
@@ -282,7 +283,22 @@ footer {
     background-color: rgb(62, 72, 80);
     color: white;
     width: 100%;
-    min-height: 415px;
+    min-height: 150px;
+    max-height: 600px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer > * {
+    width: 32%;
+    margin: 5px;
+}
+
+.lesser {
+    color: gray; 
 }
 
 .one, .five {

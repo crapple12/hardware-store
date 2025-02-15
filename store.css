@@ -20,6 +20,7 @@ header {
 
 .header {
     display: flex;  
+    font-size: 13px;
 }
 
 .left, .right {
@@ -36,20 +37,15 @@ header {
 
 .body {
     display: flex;
+    justify-content: center;
     min-height: 600px;
     color: rgb(77, 73, 72);
-}
-
-.izquierda, .derecha {
-    background-color: rgb(238, 233, 227);
-    color: rgb(238, 233, 227);
-    width: 25%;
+    background: rgb(238, 233, 227);
 }
 
 .middle {
     background-color: white;
     width: 50%;
-
 }
 
 .sub-head {
@@ -94,7 +90,7 @@ header {
     gap: 10px;
 }
 
-.rihgt {
+.right1 {
     display: flex;
     margin-right: 10px;
     align-items: center;
@@ -283,17 +279,30 @@ button {
 }
 
 footer {
-    display: flex;
     background-color: rgb(62, 72, 80);
     color: white;
     width: 100%;
     min-height: 150px;
     max-height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+footer > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
+    width: 50%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer1 {
+    display: none;
+    margin-top: 10px;
 }
 
 .footer > * {
@@ -302,7 +311,17 @@ footer {
 }
 
 .lesser {
+    margin: 5px;
     color: gray; 
+}
+
+
+.three1, .four1 {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .one, .five {
@@ -310,8 +329,30 @@ footer {
     background-color: rgb(62, 72, 80);
 }
 
+.account:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
 @media(max-width: 1800px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 24%;
     }
 
@@ -321,7 +362,7 @@ footer {
  }
 
  @media(max-width: 1700px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 22%;
     }
 
@@ -331,7 +372,7 @@ footer {
  }
 
  @media(max-width: 1600px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 20%;
     }
 
@@ -341,7 +382,7 @@ footer {
  }
 
  @media(max-width: 1500px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 18%;
     }
 
@@ -351,7 +392,7 @@ footer {
  }
 
  @media(max-width: 1400px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 16%;
     }
 
@@ -361,7 +402,7 @@ footer {
  }
 
  @media(max-width: 1300px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 14%;
     }
 
@@ -371,7 +412,7 @@ footer {
  }
 
  @media(max-width: 1200px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 12%;
     }
 
@@ -381,7 +422,7 @@ footer {
  }
 
  @media(max-width: 1100px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         width: 10%;
     }
 
@@ -392,7 +433,7 @@ footer {
 
 
  @media(max-width: 1000px) {
-    .derecha, .izquierda, .left, .right, .one, .five {
+    .left, .right, .one, .five {
         display: none;
     }
 
@@ -420,6 +461,35 @@ footer {
         max-width: 1550px;
     }
 
+ }
+
+ @media(max-width: 810px) {
+    .three, .four {
+        display: none;
+    }
+
+    .three1, .four1 {
+        display: flex;
+    }
+
+    .footer1 {
+        display: flex;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+    width: 75%;
+    }
+
+    .footer > * {
+        width: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
  }
 
  @media(max-width: 730px) {    
@@ -461,7 +531,7 @@ footer {
 }
 
 @media(max-width: 500px) {    
-    .rihgt {
+    .right1 {
         display: none;
     }
 

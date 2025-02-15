@@ -329,17 +329,17 @@ footer > * {
     background-color: rgb(62, 72, 80);
 }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
 .account:hover {
     color: white;
     cursor: pointer;
-}
-
-.account:visited {
-    color: black;
-}
-
-.account:link {
-    color: black;
 }
 
 .cart {
